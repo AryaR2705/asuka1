@@ -1,0 +1,55 @@
+/* Home.css */
+
+/* Style the outer container */
+.username-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px; /* Use at least the full viewport height */
+  background-color: rgb(48, 48, 48); /* Background color */
+}
+
+/* Style the inner box */
+.box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px; /* Limit the width of the box */
+  width: 90%; /* Adjust the width to fit various screen sizes */
+  margin: 20px; /* Add some spacing around the box */
+}
+
+/* Style the input and button */
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Media query for smaller screens (phones) */
+@media (max-width: 768px) {
+  .username-page {
+    padding: 20px; /* Add some padding for better spacing on small screens */
+  }
+  
+  .box {
+    max-width: 100%; /* Allow the box to take the full width on small screens */
+  }
+}
